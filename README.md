@@ -4,10 +4,6 @@ Predicția producției fotovoltaice
 
 Această documentație prezintă structura, logica și funcționalitatea aplicației Python dezvoltate pentru estimarea puterii active totale a unui sistem fotovoltaic, utilizând tehnici de Machine Learning și o interfață grafică interactivă.
 
-## 👤 Date Identificare (Opțional)
-* **Student:** [Numele Tău]
-* **Grupa:** [Grupa Ta]
-
 ---
 
 ## 📁 1. Datele de Intrare (Dataset)
@@ -39,7 +35,7 @@ Procesul de prelucrare a datelor înainte de antrenare urmează următorii pași
 ---
 
 ## 🤖 3. Modelul de Machine Learning
-Pentru realizarea predicției a fost ales algoritmul **Random Forest Regressor**.
+For predicție a fost ales algoritmul **Random Forest Regressor**.
 
 * **Principiu de funcționare:** Random Forest este un algoritm de tip ansamblu, format din mai mulți arbori de decizie independenți. Fiecare arbore realizează o estimare proprie, iar rezultatele lor sunt combinate (prin mediere) pentru a genera predicția finală.
 * **Motivația alegerii:** Acest algoritm este ideal pentru sistemele fotovoltaice deoarece funcționează excelent cu un număr mare de variabile de intrare și are capacitatea de a identifica relații non-liniare și complexe între parametrii sistemului hardware.
@@ -50,7 +46,7 @@ Pentru realizarea predicției a fost ales algoritmul **Random Forest Regressor**
 După faza de antrenare, modelul este evaluat strict pe baza datelor de test (pe care nu le-a văzut în timpul antrenării), calculându-se trei indicatori statistici principali:
 * **MAE (Mean Absolute Error):** Arată eroarea medie absolută dintre valorile reale și cele estimate.
 * **RMSE (Root Mean Squared Error):** Penalizează mai sever erorile mari de predicție.
-* **R² (R-squared / Coeficientul de determinare):** Indică cât de bine explică modelul variația valorilor reale. Cu cât \(R^2\) este mai aproape de 1, cu atât potrivirea modelului cu datele reale este mai precisă.
+* **R² (R-squared / Coeficientul de determinare):** Indică cât de bine explică modelul variația valorilor reale. Cu cât R² este mai aproape de 1, cu atât potrivirea modelului cu datele reale este mai precisă.
 
 ---
 
